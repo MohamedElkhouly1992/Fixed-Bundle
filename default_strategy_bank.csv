@@ -1,0 +1,8 @@
+strategy,name,description,base_recovery,severity_gain,max_recovery,comfort_penalty_coeff,degradation_slowdown,maintenance_cost,robustness_penalty_coeff,switching_penalty_coeff,preferred_min_severity,preferred_max_severity
+S0,No corrective control,Degraded operation without additional control or maintenance.,0.0,0.0,0.0,0.0,0.0,0.0,0.1,0.0,0.0,1.0
+S1,Rule-based passive correction,Simple rule-based setpoint and runtime correction; low complexity and low risk.,0.15,0.08,0.28,0.08,0.05,0.0,0.08,0.03,0.0,0.4
+S2,Schedule-aware active control,Monthly/occupancy/HVAC-availability correction with active scheduling.,0.25,0.14,0.45,0.12,0.1,0.0,0.09,0.06,0.1,0.65
+S3,Predictive degradation-aware control,Rolling-horizon predictive control using the dynamic ROM digital twin.,0.35,0.18,0.62,0.18,0.2,0.0,0.12,0.09,0.2,0.85
+S4,Maintenance-triggered control,Control plus maintenance trigger when degradation becomes physically dominant.,0.22,0.55,0.78,0.1,0.55,0.22,0.07,0.05,0.55,1.0
+S5,Robust uncertainty-aware control,Conservative control optimized against weather/occupancy/degradation uncertainty.,0.3,0.12,0.52,0.11,0.18,0.0,0.03,0.07,0.15,0.9
+S6,Hybrid control-maintenance strategy,"Combined predictive control, fan/runtime correction, and maintenance decision.",0.38,0.38,0.82,0.15,0.65,0.28,0.05,0.11,0.45,1.0

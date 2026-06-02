@@ -1,0 +1,21 @@
+{
+  "clean_path": "example_arbitration_outputs/example_clean_baseline.csv",
+  "degraded_path": "example_arbitration_outputs/example_degraded_scenario.csv",
+  "strategy_bank_path": "example_arbitration_outputs/default_strategy_bank.csv",
+  "weights": {
+    "energy": 0.45,
+    "comfort": 0.2,
+    "degradation": 0.15,
+    "maintenance": 0.1,
+    "robustness": 0.07,
+    "switching": 0.03
+  },
+  "records_compared": 365,
+  "s3_superiority": {
+    "status": "S3 not superior",
+    "S3_mean_objective": 0.1345370021473166,
+    "best_alternative": "S4",
+    "best_alternative_mean_objective": 0.11056229193521806,
+    "SSI_S3_pct": -21.684346256267975
+  }
+}
